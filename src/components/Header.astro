@@ -1,6 +1,5 @@
 ---
---- 
-
+---
 <header class="header">
   <nav>
     <div class="nav__logo"><a href="/">ArteMueble</a></div>
@@ -22,7 +21,7 @@
     <h1>Bienvenido a ArteMueble</h1>
     <p>Descubre lo Mejor del Diseño Interior Moderno</p>
 
-    <!--  FORMULARIO DE BUSCAR QUE REDIRIGE A /tienda -->
+    <!-- FORMULARIO DE BUSCAR QUE REDIRIGE A /tienda -->
     <form id="searchForm">
       <input type="text" placeholder="Buscar productos..." />
       <button type="submit"><i class="ri-search-line"></i></button>
@@ -32,12 +31,15 @@
   </div>
 </header>
 
-<!--  SCRIPT QUE HACE FUNCIONAR EL BUSCADOR -->
+<!-- SCRIPT DEL BUSCADOR -->
 <script>
   const searchForm = document.querySelector("#searchForm");
 
-  searchForm.addEventListener("submit", (e) => {
-    e.preventDefault(); // evita recargar la página
-    window.location.href = "/tienda"; // redirige a la tienda
-  });
+  // Evita error: searchForm puede ser null
+  if (searchForm) {
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault(); // evita recargar la página
+      window.location.href = "/tienda"; // redirige a la tienda
+    });
+  }
 </script>
