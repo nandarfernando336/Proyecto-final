@@ -1,0 +1,43 @@
+---
+--- 
+
+<header class="header">
+  <nav>
+    <div class="nav__logo"><a href="/">ArteMueble</a></div>
+    <ul class="nav__links" id="nav-links">
+      <li class="link"><a href="#home">Inicio</a></li>
+      <li class="link"><a href="#choose">Sobre Nosotros</a></li>
+      <li class="link"><a href="#craft">Artesanía</a></li>
+      <li class="link"><a href="#blog">Blog</a></li>
+    </ul>
+    <div class="nav__menu__btn" id="menu-btn">
+      <span><i class="ri-menu-line"></i></span>
+    </div>
+    <div class="nav__actions">
+      <span><i class="ri-user-fill"></i></span>
+    </div>
+  </nav>
+
+  <div class="section__container header__container" id="home">
+    <h1>Bienvenido a ArteMueble</h1>
+    <p>Descubre lo Mejor del Diseño Interior Moderno</p>
+
+    <!--  FORMULARIO DE BUSCAR QUE REDIRIGE A /tienda -->
+    <form id="searchForm">
+      <input type="text" placeholder="Buscar productos..." />
+      <button type="submit"><i class="ri-search-line"></i></button>
+    </form>
+
+    <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
+  </div>
+</header>
+
+<!--  SCRIPT QUE HACE FUNCIONAR EL BUSCADOR -->
+<script>
+  const searchForm = document.querySelector("#searchForm");
+
+  searchForm.addEventListener("submit", (e) => {
+    e.preventDefault(); // evita recargar la página
+    window.location.href = "/tienda"; // redirige a la tienda
+  });
+</script>

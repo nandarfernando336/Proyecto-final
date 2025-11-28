@@ -1,0 +1,197 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Catalogo ArteMueble">
+  <section class="section__container choose__container" id="choose">
+    <img class="choose__bg" src="/dot-bg.png" alt="bg" />
+    <div class="choose__content">
+      <h2 class="section__header">¿Por Qué Elegirnos?</h2>
+      <p class="section__subheader">
+        Descubre lo Mejor del Diseño Interior Moderno
+      </p>
+      <div class="choose__grid">
+        <div class="choose__card">
+          <span><i class="ri-truck-line"></i></span>
+          <h4>Envío Gratis</h4>
+          <p>
+            Disfruta de envíos rápidos y gratuitos en todos los pedidos
+            superiores a $50
+          </p>
+        </div>
+        <div class="choose__card">
+          <span><i class="ri-shopping-bag-3-line"></i></span>
+          <h4>Tienda en Línea</h4>
+          <p>
+            Compra fácilmente en nuestra tienda en línea intuitiva y amigable
+          </p>
+        </div>
+        <div class="choose__card">
+          <span><i class="ri-customer-service-2-line"></i></span>
+          <h4>Soporte 24/7</h4>
+          <p>
+            Nuestro equipo está disponible 24/7 para brindarte soporte y
+            responder tus dudas
+          </p>
+        </div>
+        <div class="choose__card">
+          <span><i class="ri-loop-right-line"></i></span>
+          <h4>Devoluciones Fáciles</h4>
+          <p>
+            Ofrecemos devoluciones sin complicaciones en todos los pedidos
+            dentro de los 30 días
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="choose__image">
+      <img src="/choose.jpg" alt="choose" />
+    </div>
+  </section>
+
+  <section class="offer__container" id="offer">
+    <div class="offer__grid__top">
+      <img src="/offer-1.jpg" alt="offer" />
+      <img src="/offer-2.jpg" alt="offer" />
+      <img src="/offer-3.jpg" alt="offer" />
+      <div class="offer__content">
+        <h2 class="section__header">
+          Descubre las Mejores Ofertas en Muebles Modernos
+        </h2>
+        <p class="section__subheader">
+          Descubre las Mejores Ofertas en Muebles Modernos
+        </p>
+      </div>
+    </div>
+    <div class="offer__grid__bottom">
+      <img src="/offer-4.jpg" alt="offer" />
+      <img src="/offer-5.jpg" alt="offer" />
+      <img src="/offer-6.jpg" alt="offer" />
+      <img src="/offer-7.jpg" alt="offer" />
+    </div>
+  </section>
+
+  <section class="section__container craft__container" id="craft">
+    <div class="craft__content">
+      <h2 class="section__header">Muebles Artesanales</h2>
+      <p class="section__subheader">Descubre lo Mejor en Muebles Artesanales</p>
+      <a class="btn" href="/tienda">Explorar</a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="/craft-1.png" alt="craft" />
+        <p>Silla Nórdica</p>
+        <h4>$65.00</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="/craft-2.png" alt="craft" />
+        <p>Silla Wingback</p>
+        <h4>$50.00</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+    <div class="craft__image">
+      <div class="craft__image__content">
+        <img src="/craft-3.png" alt="craft" />
+        <p>Silla de Acento</p>
+        <h4>$45.00</h4>
+      </div>
+      <a href="#"><i class="ri-add-line"></i></a>
+    </div>
+  </section>
+
+  <section class="section__container modern__container" id="modern">
+    <div class="modern__image">
+      <img src="/dot-bg.png" alt="bg" class="modern__bg" />
+      <img src="/modern-1.jpg" alt="modern" class="modern__img-1" />
+      <img src="/modern-2.jpg" alt="modern" class="modern__img-2" />
+      <img src="/modern-3.jpg" alt="modern" class="modern__img-3" />
+    </div>
+    <div class="modern__content">
+      <h2 class="section__header">Diseño Interior Moderno</h2>
+      <p class="section__subheader">
+        Descubre lo Mejor del Diseño Interior Moderno
+      </p>
+      <div class="modern__grid">
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>Somos un proveedor líder de muebles y decoración moderna</p>
+        </div>
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Nuestros productos están diseñados para mejorar el estilo y la
+            comodidad de tu hogar
+          </p>
+        </div>
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Ofrecemos una amplia variedad de productos para cada estilo y
+            presupuesto
+          </p>
+        </div>
+        <div class="modern__card">
+          <span><i class="ri-checkbox-blank-circle-line"></i></span>
+          <p>
+            Nuestro equipo está comprometido con brindarte un servicio al
+            cliente excepcional
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container blog_container" id="blog">
+    <h2 class="section__header">Blog Reciente</h2>
+
+<div class="blog__grid">
+
+  <!-- TARJETA 1 (ya tenía link) -->
+  <div class="blog__card">
+    <a 
+      href="https://artilux.com.au/blog/guide-to-creating-minimalist-home-design/" 
+      target="_blank"
+      style="display: block;"
+    >
+      <img src="/blog-1.jpg" alt="blog" />
+    </a>
+    <h4>Cómo Crear un Hogar Minimalista</h4>
+    <p><span>por</span> Artilux <span>el</span> 15 ene, 2022</p>
+  </div>
+
+  <!-- TARJETA 2 (NUEVO LINK) -->
+  <div class="blog__card">
+    <a
+      href="https://www.elledecor.com/es/decoracion/g39759544/tendencias-decoracion-diseno-interiores/"
+      target="_blank"
+      style="display: block;"
+    >
+      <img src="/blog-2.jpg" alt="blog" />
+    </a>
+    <h4>Top 35 Tendencias en Diseño Interior</h4>
+    <p><span>por</span> Elle Decoration <span>el</span> 30 nov, 2024</p>
+  </div>
+
+  <!-- TARJETA 3 (NUEVO LINK) -->
+  <div class="blog__card">
+    <a
+      href="https://www.mueblesluismiguel.com/como-elegir-el-mueble-perfecto-para-cada-habitacion/"
+      target="_blank"
+      style="display: block;"
+    >
+      <img src="/blog-3.jpg" alt="blog" />
+    </a>
+    <h4>Cómo Elegir los Muebles Correctos</h4>
+    <p><span>por</span> Muebles Luis Miguel <span>el</span> 21 oct, 2024</p>
+  </div>
+
+</div>
+
+
+  </section>
+</Layout>
