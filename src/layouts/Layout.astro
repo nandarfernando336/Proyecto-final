@@ -2,6 +2,8 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
+import "../styles/global.css"; // ← IMPORTAR CSS AQUÍ ES LO CORRECTO
+
 interface Props {
   title: string;
 }
@@ -28,25 +30,18 @@ const { title } = Astro.props;
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
-    <!-- TU CSS GLOBAL -->
-    <link rel="stylesheet" href="/src/styles/global.css" />
+ 
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
 
   <body>
-
-    <!--  HEADER GLOBAL -->
-    <Header />
-
-    <!--  AQUÍ SE RENDERIZA EL CONTENIDO DE CADA PÁGINA -->
+  <Header />
     <main>
       <slot />
     </main>
-
-    <!--  FOOTER GLOBAL -->
-    <Footer />
+   <Footer />
 
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
